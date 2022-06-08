@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="/ai/ai.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Lato:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Bud</title>
+  </head>
+  <body>
+    <!-- header with logo and nav buttons -->
+    <header>
+      <img class="test-logo" src="./images/logobud2.png" />
+      <nav></nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+      <!-- when no plants have been added-->
+      <div id="no-plants"></div>
+
+      <!-- add sensor button -->
+      <div class="button_div">
+        <div>
+          <a href="./ai/ai.html" id="add-plant">Nieuwe BUD</a>
+        </div>
+      </div>
+
+      <!-- Bud sensor -->
+      <div class="output_container">
+        <!<div class="output">
+          <h3 id="sensor_bud"></h3>
+          <h3 id="naam"></h3>
+          <!-- water data -->
+          <p id="vocht"></p>
+          <!-- temperature data -->
+          <p id="temp"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
