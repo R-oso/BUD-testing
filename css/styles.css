@@ -90,6 +90,9 @@ canvas {
     margin: 0;
     margin-top: 15px;
     margin-bottom: 15px;
+    border 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 section.sensor_name {
@@ -105,6 +108,10 @@ section.notification {
 #vocht {
     margin: 0;
 }
+
+#temp {
+    margin: 0;
+}    
 
 #add-plant {
     font-family: 'Cabin', sans-serif;
