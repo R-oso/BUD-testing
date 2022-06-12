@@ -17,22 +17,8 @@ function preload() {
 // function setup() {
 //     createCanvas(1000, 1600);
  
- // phone from camer activate
-   // Activate the back camera
-    video =  createCapture({
-        audio: false,
-        video: {
-          facingMode: {
-            exact: "environment"
-          }
-        }
-      });
-
-    video.hide();
-
-
 //     //! Activate the front camera !//
-//     video =  createCapture(VIDEO)
+    video =  createCapture(VIDEO)
    
 //     //! Activate the back camera !//
 //     // video =  createCapture({
@@ -44,7 +30,7 @@ function preload() {
 //     //     }
 //     //   });
 
-//     video.hide();
+    video.hide();
 
 
 
