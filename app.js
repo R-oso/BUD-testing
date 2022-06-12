@@ -159,4 +159,4 @@ function meldingen() {
 }
 
 getSensorData();
-window.localStorage.clear();
+// window.localStorage.clear();
