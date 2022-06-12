@@ -2,7 +2,7 @@ body {
     height: 100%;
     width: 100%;
     margin: 0px ;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 main {
@@ -15,6 +15,22 @@ header {
     align-items: center;
     padding: 30px 10%;
     font-family: 'Cabin', sans-serif;
+}
+
+h1 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 200;
+    font-size: 2.0em;
+    display: inline;
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#naam {
+    font-weight: 600;
 }
 
 .nav_links {
@@ -42,7 +58,6 @@ canvas {
 
 .test-logo {
     width: 45%;
-    cursor: pointer;
 }
 
 .container {
@@ -62,25 +77,43 @@ canvas {
     background-color: #C7EDCE;
     width: 80vw;
     border: 1px solid rgb(218, 213, 213);
-    border-radius: 10%;
+    border-radius: 24px;
     margin-bottom: 30px;
     padding: 20px;
+
     color: #1A4922;
+    display: none;
 }
 
-#sensor-bud {
-    font-family: 'Cabin', sans-serif;
-    font-size: 3em;
+.icons {
+    height: 70px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section.sensor_name {
+    text-align: center;    
+}
+
+section.notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vocht {
+    margin: 0;
 }
 
 #add-plant {
     font-family: 'Cabin', sans-serif;
     display:block;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #8AC168;
     width: 100px;
-    border-radius: 4%;
+    border-radius: 12px;
     padding: 5px;
     text-decoration: none;
     color: white;   
@@ -96,8 +129,5 @@ canvas {
     margin-bottom: 30px;
 }
 
-.non_visible {
-    display: none;
-}
 
 
