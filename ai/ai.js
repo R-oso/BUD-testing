@@ -18,14 +18,14 @@ function setup() {
     createCanvas(1000, 1600);
     // Create the video
     video = createCapture(VIDEO);
-    //     audio: false,
-    //     video: 
-    //     {
-    //       facingMode: {
-    //         exact: "environment"
-    //       } 
-    //     }
-    //   });
+        audio: false,
+        video: 
+        {
+          facingMode: {
+            exact: "environment"
+          } 
+        }
+      });
     video.hide();
     
     // STEP 2: Start classifying
