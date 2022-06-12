@@ -17,7 +17,12 @@ function preload() {
 function setup() {
     createCanvas(1000, 1600);
     // Create the video
-     video =  createCapture({
+
+    // Activate the front camera
+    // video =  createCapture(VIDEO)
+   
+    // Activate the back camera
+    video =  createCapture({
         audio: false,
         video: {
           facingMode: {
