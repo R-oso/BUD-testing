@@ -14,8 +14,8 @@ function preload() {
     classifier = ml5.imageClassifier(modelURL + 'model.json');
 }
 
-// function setup() {
-//     createCanvas(1000, 1600);
+function setup() {
+    createCanvas(1000, 1600);
  
 //     //! Activate the front camera !//
     video =  createCapture(VIDEO)
