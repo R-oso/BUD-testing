@@ -6,14 +6,34 @@ body {
 }
 
 main {
-    padding:2vw;
+    margin: 0px 0px 20px 20px;
 }
 
 header {
     display: flex;
-    margin: 0;
-    height: 80px;
+    justify-content: space-around;
     align-items: center;
+    padding: 30px 10%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.nav_links {
+    list-style: none;  
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+.nav_links li {
+    display: inline; 
+    padding: 10px;  
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 2s;
+}
+
+.nav_links li a:hover {
+    color: #1A4922;
 }
 
 canvas {
@@ -21,34 +41,31 @@ canvas {
 }
 
 .test-logo {
-    margin: auto;
-    width: 60%;
-    text-align: center;
-    font-size: 50px;
-    color: rgb(70, 70, 70);
+    width: 45%;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    margin-top: 100px;
 }
 
 #no-plants {
     font-family: 'Lato', sans-serif;
-    margin-top: 160px;
     margin-left: 3vw;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .output {
-    background-color: #1A4922;
+    background-color: #C7EDCE;
     width: 80vw;
     border: 1px solid rgb(218, 213, 213);
     border-radius: 10%;
     margin-bottom: 30px;
     padding: 20px;
-    color: white;
-}
-
-.output_container {
-    display: flex;
-    justify-content: center;
+    color: #1A4922;
 }
 
 #sensor-bud {
@@ -60,15 +77,16 @@ canvas {
     font-family: 'Cabin', sans-serif;
     display:block;
     color: black;
-    font-size: 1.4rem;
+    font-size: 2rem;
     background-color: #8AC168;
     width: 100px;
-    border-radius: 10%;
+    border-radius: 4%;
     padding: 5px;
     text-decoration: none;
     color: white;   
     text-align: center;
     margin-top: 40px;
+    width: 200px;
 }
 
 .button_div {
@@ -76,6 +94,10 @@ canvas {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.non_visible {
+    display: none;
 }
 
 

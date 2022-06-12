@@ -53,7 +53,7 @@ function draw() {
         // Do nothing, keep classifying
     } else {
         counter++
-        if (counter == 100) {
+        if (counter == 150) {
             const plantText = document.createElement('p');
             plantText.innerHTML = `Ik weet zeker dat dit een ${label} is!`;
             document.body.appendChild(plantText);  
