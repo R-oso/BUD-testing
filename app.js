@@ -18,7 +18,6 @@ let maximaleGrondvocht
 let minimaletemperatuur
 let maximaletemperatuur
 
-
 let plantDataLoaded = ""
 
 // checks if there has been an update and prints message
@@ -105,10 +104,7 @@ function noPlantsMessage() {
 
 // Data output for user
 function meldingen() {
-    if (message == true) {
-        createElement();
-    }
-    
+    document.getElementById("")
     let meldingGrondvocht = () => {
         if (grondvochtSensor >= minimaleGrondvocht && grondvochtSensor <= maximaleGrondvocht) {
             message = true
@@ -148,26 +144,13 @@ function meldingen() {
             console.log('geen plant');           
         }
     }
-    // document.querySelector("#naam").innerHTML = plantvoorspelling
+    document.querySelector("#naam").innerHTML = plantvoorspelling
     // document.querySelector("#naam").element.style.color = red
     console.log("grondvocht melding:")
     meldingGrondvocht();
     console.log('temperatuur melding:')
     meldingTemperatuur();
     // message = true
-}
-
-function createElement() {
-    // Create all output elements to display on the application
-    let output = document.createElement('div').classList.add('output');
-    let sensorBud = document.createElement('h3').classList.add('sensor_bud');
-    let naam = document.createElement('h3').classList.add('naam');
-    let vocht = document.createElement('p').classList.add('vocht');
-    let temp = document.createElement('p').classList.add('temp');
-
-    let outputDiv = document.getElementsByClassName('output_container')
-    outputDiv.appendChild(output);
-    output.appendChild(sensorBud, naam, vocht, temp);
 }
 
 getSensorData();
