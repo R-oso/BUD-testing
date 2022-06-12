@@ -17,13 +17,12 @@ function preload() {
 function setup() {
     createCanvas(1000, 1600);
     // Create the video
-    video = createCapture(VIDEO);
+     video =  createCapture({
         audio: false,
-        video: 
-        {
+        video: {
           facingMode: {
             exact: "environment"
-          } 
+          }
         }
       });
     video.hide();
