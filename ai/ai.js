@@ -18,17 +18,17 @@ function setup() {
     createCanvas(1000, 1600);
  
 //     //! Activate the front camera !//
-    video =  createCapture(VIDEO)
+//     video =  createCapture(VIDEO)
    
 //     //! Activate the back camera !//
-//     // video =  createCapture({
-//     //     audio: false,
-//     //     video: {
-//     //       facingMode: {
-//     //         exact: "environment"
-//     //       }
-//     //     }
-//     //   });
+     video =  createCapture({
+         audio: false,
+         video: {
+           facingMode: {
+             exact: "environment"
+           }
+         }
+       });
 
     video.hide();
 
