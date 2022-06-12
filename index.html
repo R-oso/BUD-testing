@@ -18,31 +18,36 @@
     <!-- header with logo and nav buttons -->
     <header>
       <img class="test-logo" src="./images/logobud2.png" />
-      <nav></nav>
+      <nav>
+        <ul class="nav_links">
+          <li a href="#">About</li>
+          <li a href="index.html">Buds</li>
+        </ul>
+      </nav>
     </header>
 
     <!-- main content -->
     <main>
       <!-- when no plants have been added-->
-      <div id="no-plants"></div>
+      <div class="container">
+        <div id="no-plants"></div>
+      </div>
 
       <!-- add sensor button -->
       <div class="button_div">
         <div>
-          <a href="./ai/ai.html" id="add-plant">Nieuwe BUD</a>
+          <a href="./ai/ai.html" id="add-plant">Toevoegen</a>
         </div>
       </div>
 
       <!-- Bud sensor -->
-      <div class="output_container">
-        <!<div class="output">
-          <h3 id="sensor_bud"></h3>
-          <h3 id="naam"></h3>
-          <!-- water data -->
-          <p id="vocht"></p>
-          <!-- temperature data -->
-          <p id="temp"></p>
-        </div>
+      <div class="output">
+        <h3 id="sensor-bud"></h3>
+        <h3 id="naam"></h3>
+        <!-- water data -->
+        <p id="vocht"></p>
+        <!-- temperature data -->
+        <p id="temp"></p>
       </div>
     </main>
   </body>
