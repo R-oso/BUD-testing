@@ -45,8 +45,13 @@ function showSensorData(data){
 
     if (message == true) {
         meldingen()
+        showOutput()
     }
     
+}
+
+function showOutput() {
+    document.getElementById('output').style.display = "block"
 }
 
 
@@ -108,16 +113,16 @@ function meldingen() {
     let meldingGrondvocht = () => {
         if (grondvochtSensor >= minimaleGrondvocht && grondvochtSensor <= maximaleGrondvocht) {
             message = true
-            document.querySelector("#sensor-bud").innerHTML = "Bud 1: "
+            document.querySelector("#sensor-bud").innerHTML = "Bud 1: ";
             console.log('alles gaat goed')
         } else if (grondvochtSensor >= minimaleGrondvocht && grondvochtSensor >= maximaleGrondvocht) {
             message = true
-            document.querySelector("#sensor-bud").innerHTML = "Bud 1: "
+            document.querySelector("#sensor-bud").innerHTML = "Bud 1: ";
             document.getElementById("vocht").innerHTML = "Je plant is aan het uitdrogen!";
             console.log('je plant is aan het uitdrogen')
         } else if (grondvochtSensor <= minimaleGrondvocht && grondvochtSensor <= maximaleGrondvocht) {
             message = true
-            document.querySelector("#sensor-bud").innerHTML = "Bud 1: "
+            document.querySelector("#sensor-bud").innerHTML = "Bud 1:"
             document.getElementById("vocht").innerHTML = "Je plant is te nat!";
             console.log("Je plant is te nat!")
         } else {
@@ -127,12 +132,12 @@ function meldingen() {
     }
     let meldingTemperatuur = () => {
         if (temperatuurSensor >= minimaletemperatuur && temperatuurSensor <= maximaletemperatuur) {
-            document.querySelector("#sensor-bud").innerHTML = "Bud 1: "
+            document.querySelector("#sensor-bud").innerHTML = "Bud 1: ";
             message = true
             console.log('alles gaat goed')
         } else if (temperatuurSensor <= minimaletemperatuur && temperatuurSensor <= maximaletemperatuur) {
             message = true
-            document.querySelector("#sensor-bud").innerHTML = "Bud 1: "
+            document.querySelector("#sensor-bud").innerHTML = "Bud 1: ";
             document.getElementById("temp").innerHTML = "Je plant bevriest zo wat!";
             console.log('Je plant bevriest zowat!')
         } else if (temperatuurSensor >= minimaletemperatuur && temperatuurSensor >= maximaletemperatuur) {
@@ -154,4 +159,4 @@ function meldingen() {
 }
 
 getSensorData();
-window.localStorage.clear();
+// window.localStorage.clear();
