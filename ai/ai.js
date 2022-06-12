@@ -16,12 +16,11 @@ function preload() {
 
 function setup() {
     createCanvas(1000, 1600);
-    // Create the video
-
-    // Activate the front camera
+    
+    //! Activate the front camera !//
     video =  createCapture(VIDEO)
    
-    // Activate the back camera
+    //! Activate the back camera !//
     // video =  createCapture({
     //     audio: false,
     //     video: {
@@ -30,8 +29,8 @@ function setup() {
     //       }
     //     }
     //   });
-    // video.hide();
-    
+
+    video.hide();
     // STEP 2: Start classifying
     classifyVideo();
 }

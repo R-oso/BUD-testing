@@ -33,7 +33,11 @@ function showSensorData(data){
     temperatuurSensor = data.feeds[0].field1;
     luchtvochtSensor = data.feeds[0].field2;
     grondvochtSensor = data.feeds[0].field3;
-
+    
+    // Work in progress!
+    // let plantLink = document.createElement('a').setAttribute(plant.foto);
+    // body.appendChild(plantLink)
+    
     console.log('Data van sensoren:')
     console.log(grondvochtSensor);
     console.log(temperatuurSensor);
@@ -46,14 +50,12 @@ function showSensorData(data){
     if (message == true) {
         meldingen()
         showOutput()
-    }
-    
+    }   
 }
 
 function showOutput() {
     document.getElementById('output').style.display = "block"
 }
-
 
 // // papa parse
 function loadPlantData() {
@@ -150,12 +152,10 @@ function meldingen() {
         }
     }
     document.querySelector("#naam").innerHTML = plantvoorspelling
-    // document.querySelector("#naam").element.style.color = red
     console.log("grondvocht melding:")
     meldingGrondvocht();
     console.log('temperatuur melding:')
     meldingTemperatuur();
-    // message = true
 }
 
 getSensorData();
