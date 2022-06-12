@@ -14,23 +14,40 @@ function preload() {
     classifier = ml5.imageClassifier(modelURL + 'model.json');
 }
 
-function setup() {
-    createCanvas(1000, 1600);
-    
-    //! Activate the front camera !//
-    video =  createCapture(VIDEO)
-   
-    //! Activate the back camera !//
-    // video =  createCapture({
-    //     audio: false,
-    //     video: {
-    //       facingMode: {
-    //         exact: "environment"
-    //       }
-    //     }
-    //   });
+// function setup() {
+//     createCanvas(1000, 1600);
+ 
+ // phone from camer activate
+   // Activate the back camera
+    video =  createCapture({
+        audio: false,
+        video: {
+          facingMode: {
+            exact: "environment"
+          }
+        }
+      });
 
     video.hide();
+
+
+//     //! Activate the front camera !//
+//     video =  createCapture(VIDEO)
+   
+//     //! Activate the back camera !//
+//     // video =  createCapture({
+//     //     audio: false,
+//     //     video: {
+//     //       facingMode: {
+//     //         exact: "environment"
+//     //       }
+//     //     }
+//     //   });
+
+//     video.hide();
+
+
+
     // STEP 2: Start classifying
     classifyVideo();
 }
