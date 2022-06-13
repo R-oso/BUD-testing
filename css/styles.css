@@ -39,7 +39,7 @@ canvas {
 }
 
 .test-logo {
-    height: 100px;
+    height: 120px;
 
 }
 
@@ -66,8 +66,8 @@ canvas {
 .icons {
     height: 70px;
     margin: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     border: 1px solid white;
     border-radius: 50%;
     padding: 5px;
@@ -94,7 +94,6 @@ section.notification {
 
 #add-plant {
     font-family: 'Cabin', sans-serif;
-    color: black;
     font-size: 20px;
     background-color: #8AC168;
     border-radius: 12px;
@@ -102,6 +101,20 @@ section.notification {
     text-decoration: none;
     color: white;   
     text-align: center;
+}
+
+#delete-plant {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 13px;
+    background-color: #FF5964;
+    border-radius: 12px;
+    border: none;
+    padding: 9px;
+    text-decoration: none;
+    color: white;   
 }
 
 .button-div {
