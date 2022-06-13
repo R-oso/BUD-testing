@@ -1,8 +1,7 @@
 const url = 'https://api.thingspeak.com/channels/1747179/feeds.json?key=G47577QHO93IWHOU&results=1'
 
 // AI plant voorspelling
-let plantvoorspelling = window.localStorage.getItem("plant")
-console.log(plantvoorspelling)
+let plantvoorspelling = window.localStorage.getItem("plant")    
 
 // sensor metingen
 // sensor grondvocht meting
@@ -20,7 +19,7 @@ let maximaletemperatuur
 
 let plantDataLoaded = ""
 
-// checks if there has been an update and prints message
+// checkt of er een update is en print een message
 let message = false
 
 function getSensorData(){
@@ -44,12 +43,13 @@ function showSensorData(data){
     console.log(luchtvochtSensor);
     setTimeout(getSensorData, 10000);
     if (plantDataLoaded == false){
-    loadPlantData()    
+        loadPlantData()    
     }
 
     if (message == true) {
-        meldingen()
-        showOutput()
+        meldingen();
+        addDelete();
+        showOutput();
     }   
 }
 
@@ -70,7 +70,6 @@ function loadPlantData() {
 // compare fetched sensor data with plant data
 function searchPlant(data) {
     plantDataLoaded = true
-
     perfectePlantSituatie = []
 
     for (let plant of data) {
@@ -99,15 +98,29 @@ function searchPlant(data) {
 
 // Message to user if no Bud has been connected yet
 function noPlantsMessage() {
-        let noPlants = document.createElement("p")
-        let noPlantsTextBig = document.createTextNode("Het lijkt erop dat je nog geen BUD hebt toegevoegd.")
-        let noPlantsText = document.createTextNode( "Click the button below to add a plant")
-        noPlants.appendChild(noPlantsText)
-        let noPlantsDiv = document.getElementById("no-plants")
-        noPlantsDiv.appendChild(noPlantsTextBig)
-        // noPlantsDiv.appendChild(noPlantsText)
-    }
+    let noPlants = document.createElement("p")
+    let noPlantsText = document.createTextNode( "Click the button below to add a plant")
+    let noPlantsTextBig = document.createTextNode("Het lijkt erop dat je nog geen BUD hebt toegevoegd.")
+    noPlants.appendChild(noPlantsText)
+    let noPlantsDiv = document.getElementById("no-plants")
+    noPlantsDiv.appendChild(noPlantsTextBig)
+    // noPlantsDiv.appendChild(noPlantsText)
+}
 
+function addDelete() {
+    const element = document.getElementById('delete-plant')
+    element.addEventListener("click", () => {
+        if (window.localStorage != "") {
+            window.localStorage.clear();
+            let deletion = true
+            localStorage.setItem("deleted", deletion);
+            window.location.href = "/index.html";
+            return;
+        } else {
+            return;
+        } 
+    })
+}
 
 // Data output for user
 function meldingen() {
@@ -128,8 +141,12 @@ function meldingen() {
             document.getElementById("vocht").innerHTML = "De potgrond van de plant is iets te nat. Je hoeft een tijdje geen water te geven.";
             console.log("Je plant is te nat!")
         } else {
-        noPlantsMessage()
-            console.log('geen plant');
+            if (window.localStorage.getItem('deleted') == true) {
+                meldingDelete()
+            } else {
+                noPlantsMessage()
+                console.log('geen plant');                
+            }           
         }
     }
     let meldingTemperatuur = () => {
@@ -151,12 +168,19 @@ function meldingen() {
             console.log('geen plant');           
         }
     }
+
     document.querySelector("#naam").innerHTML = plantvoorspelling
     console.log("grondvocht melding:")
     meldingGrondvocht();
     console.log('temperatuur melding:')
     meldingTemperatuur();
+    console.log('deletion')
+}
+
+let meldingDelete = () => {
+    let noPlants = document.getElementById('no-plants');
+    noPlants.innerHTML = "De bud is verwijderd"
 }
 
 getSensorData();
-window.localStorage.clear();
+
