@@ -129,6 +129,7 @@ function meldingen() {
         if (grondvochtSensor >= minimaleGrondvocht && grondvochtSensor <= maximaleGrondvocht) {
             message = true
             document.querySelector("#sensor-bud").innerHTML = "Bud 1: ";
+            document.getElementById("vocht").innerHTML = "De plant heeft voorlopig genoeg water";
             console.log('alles gaat goed')
         } else if (grondvochtSensor >= minimaleGrondvocht && grondvochtSensor >= maximaleGrondvocht) {
             message = true
@@ -152,6 +153,7 @@ function meldingen() {
     let meldingTemperatuur = () => {
         if (temperatuurSensor >= minimaletemperatuur && temperatuurSensor <= maximaletemperatuur) {
             document.querySelector("#sensor-bud").innerHTML = "Bud 1: ";
+            document.getElementById("temp").innerHTML = "Dit is een fijne temperatuur voor de plant.";
             message = true
             console.log('alles gaat goed')
         } else if (temperatuurSensor <= minimaletemperatuur && temperatuurSensor <= maximaletemperatuur) {
