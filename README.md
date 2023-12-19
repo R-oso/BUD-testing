@@ -1,6 +1,7 @@
 # BUD - TLE project 2022
 
-![logobud2](https://github.com/R-oso/R-oso.github.io/assets/74653039/8701e2f3-ef45-42c0-bd9d-0bcb191e66fa)
+![logo_bud](https://github.com/R-oso/R-oso.github.io/assets/74653039/5e0fb1c8-705a-400a-91d0-83cd1802d53c)
+
 
 ## Introduction
 BUD is an idea for a helpful tool that will keep track of your plants' health. The BUD software is connected to exterior hardware and both communicate with each other. This results in the software knowing when to give your specific plant more water or sunlight.
