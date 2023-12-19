@@ -15,6 +15,10 @@ Using AI, BUD can recognize your houseplant when you open your camera on your ph
 - Code
   - JavaScript
     - AI (ML5 and Teachable Machine)
+    - Structure
+- Styling
+  - Style guide
+  - 
 
 ## Planning
 In this project, me and three other students worked as a team. To efficiently work together we worked based on the SCRUM technique. By iterating our concept ideas and narrowing down the target audience we had in mind the idea for BUD became more viable. 
@@ -28,7 +32,7 @@ After each working day, we would hold a short evaluation about our current progr
 ## Code
 
 ### JavaScript
-This project is made mostly using JavaScript. Some external software was used to create the AI and layout of the UI.
+This project is made mostly using JavaScript. Some external software was used to create the functionality of the application.
 
 P5 Library for compatibility with AI (ML5):
 
@@ -54,10 +58,18 @@ function loadPlantData() {
 }
 ```
 ### AI (ML5 and Teachable Machine)
-I chose to use both ML5 and Teachable Machine. ML5 made it possible to classify video in real-time and recognize what type of plant the user is looking at with their phone. To make this classifying system work, we needed an actual AI model that could differentiate different species of plants, based on the characteristics of each plant. Thats where Teachable Machine stepped in; Google's tool to make AI models in a quick manner. 
+I chose to use both ML5 and Teachable Machine. ML5 made it possible to classify video in real-time and recognize what type of plant the user is looking at with their phone. To make this classifying system work, we needed an actual AI model that could differentiate different species of plants, based on the characteristics of each plant. Thats where Teachable Machine stepped in; a tool made by Google to make AI models in a quick manner. 
 
 Teachable machine model link:
 `let modelURL = "https://teachablemachine.withgoogle.com/models/VdFvMP0WA/";`
+
+### Structure
+
+## Styling
+The styling for this project was done using simple base CSS, without any libraries or other third party software.
+
+### Styleguide
+![styleguide_bud_Tekengebied 1](https://github.com/R-oso/R-oso.github.io/assets/74653039/2c00c952-ce7a-4a1b-9715-81397c317831)
 
 # Testdocument
 This repo is made for testing the software of BUD and its compatibility with different devices. 
