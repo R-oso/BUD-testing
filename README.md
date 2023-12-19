@@ -1,5 +1,7 @@
 # BUD - TLE project 2022
 
+![logobud2](https://github.com/R-oso/R-oso.github.io/assets/74653039/8701e2f3-ef45-42c0-bd9d-0bcb191e66fa)
+
 ## Introduction
 BUD is an idea for a helpful tool that will keep track of your plants' health. The BUD software is connected to exterior hardware and both communicate with each other. This results in the software knowing when to give your specific plant more water or sunlight.
 
@@ -35,7 +37,7 @@ P5 Library for compatibility with AI (ML5):
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
 ```
 
-We needed to access data about each individual species of plant. After collecting data about plants and their preferrec amount of sunlight and hydration, i put these statistics inside of a csv file. To parse the csv file and make the information inside of it ready to use, we decided to use PapaParse. 
+We needed to access data about each individual species of plant. After collecting data about plants and their preferred amount of sunlight and hydration, i put these statistics inside of a csv file. To parse the csv file and make the information inside of it ready to use, we decided to use PapaParse. 
 
  `<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>`
 
