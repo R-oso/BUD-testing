@@ -92,6 +92,6 @@ The styling for this project was done using simple base CSS, without any librari
 ![styleguide_bud_Tekengebied 1](https://github.com/R-oso/R-oso.github.io/assets/74653039/2c00c952-ce7a-4a1b-9715-81397c317831)
 
 # Proof of concept
-This repo is made for testing the software of BUD and its compatibility with different devices.  
+This repository is designed for testing BUD software and its compatibility across various devices. It serves as a proof of concept and is not currently available for commercial use.
 
 
