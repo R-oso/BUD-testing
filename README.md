@@ -64,6 +64,19 @@ Teachable machine model link:
 `let modelURL = "https://teachablemachine.withgoogle.com/models/VdFvMP0WA/";`
 
 ### Structure
+Users can add their own plants to the BUD application. 
+
+_1_
+The user presses the button to add a new plant.
+![WhatsApp Image 2022-06-15 at 9 31 36 AM](https://github.com/R-oso/R-oso.github.io/assets/74653039/3729e4e0-9a7e-46e7-a699-e6eba65bdae9)
+
+_2_
+The camera opens up and shows a live feed inside of the browser. The user needs to focus their camera onto the desired plant. The code will now classify the plant using ML5 and the model made with Teachable Machine. _Note: the feed only gets classified if a plant is on the screen_
+![WhatsApp Image 2022-06-15 at 2 50 59 PM](https://github.com/R-oso/R-oso.github.io/assets/74653039/607faf74-cc20-4843-83f2-4a12206b8325)
+
+_3_
+The plant has been added to the homescreen. Using the csv file, the code now
+![WhatsApp Image 2022-06-15 at 9 31 40 AM](https://github.com/R-oso/R-oso.github.io/assets/74653039/430b0f92-b7f1-47f1-a39b-6da278b05946)
 
 ## Styling
 The styling for this project was done using simple base CSS, without any libraries or other third party software.
