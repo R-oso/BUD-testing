@@ -3,6 +3,8 @@
 ## Introduction
 BUD is an idea for a helpful tool that will keep track of your plants' health. The BUD software is connected to exterior hardware and both communicate with each other. This results in the software knowing when to give your specific plant more water or sunlight.
 
+Using AI, BUD can recognize your houseplant when you open your camera on your phone. The hardware keeps track of the moist levels inside of the plant's soil and can also pick up the sun intensity. Depending on these factors, BUD might tell you to move your plant to another location or to change the amount of water the user gives to their plant.
+
 ## Table of contents
 - Planning
    - Trello and Miro
@@ -23,24 +25,21 @@ After each working day, we would hold a short evaluation about our current progr
 ## Code
 
 ### JavaScript
-This project is made mostly using JavaScript. 
+This project is made mostly using JavaScript. Some external software was used to create the AI and layout of the UI.
 
 P5 Library for compatibility with AI:
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-`
 
-Teachable machine link
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+```
+
+Teachable machine model link:
 `let modelURL = "https://teachablemachine.withgoogle.com/models/VdFvMP0WA/";`
 
 ### AI (ML5 and Teachable Machine)
-I chose to use both ML5 and Teachable Machine 
-
-
-
-
-
+I chose to use both ML5 and Teachable Machine. ML5 made it possible to classify video in real-time and recognize what type of plant the user is looking at with their phone. But to make this classifying system work, we needed an actual AI model that could differentiate different species of plants, based on the characteristics of each plant.
 
 
 
