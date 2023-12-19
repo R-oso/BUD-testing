@@ -1,4 +1,4 @@
-# BUD
+# BUD - TLE project 2022
 BUD is an idea for a helpful tool that will keep track of your plants' health. The BUD software is connected to exterior hardware and both communicate with each other. This results in the software knowing when to give your specific plant more water or sunlight.
 
 # AI
