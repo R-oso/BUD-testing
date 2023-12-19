@@ -9,7 +9,7 @@ BUD is an idea for a helpful tool that will keep track of your plants' health. T
    - Evaluation
 - Code
   - JavaScript
-    - AI (ML5)
+    - AI (ML5 and Teachable Machine)
 
 ## Planning
 In this project, we worked as a team. To efficiently work together we worked based on the SCRUM technique. By iterating our concept ideas and narrowing down the target audience we had in mind the idea for BUD became more viable. 
@@ -23,7 +23,23 @@ After each working day, we would hold a short evaluation about our current progr
 ## Code
 
 ### JavaScript
-This project is made mostly using JavaScript. The code logic is
+This project is made mostly using JavaScript. 
+
+P5 Library for compatibility with AI:
+`<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+`
+
+Teachable machine link
+`let modelURL = "https://teachablemachine.withgoogle.com/models/VdFvMP0WA/";`
+
+### AI (ML5 and Teachable Machine)
+I chose to use both ML5 and Teachable Machine 
+
+
+
+
 
 
 
