@@ -70,7 +70,7 @@ Users can add their own plants to the BUD application.
 
 The user presses the button to add a new plant.
 
-![WhatsApp Image 2022-06-15 at 9 31 36 AM](https://github.com/R-oso/R-oso.github.io/assets/74653039/3729e4e0-9a7e-46e7-a699-e6eba65bdae9 | width=100)
+![WhatsApp Image 2022-06-15 at 9 31 36 AM](https://github.com/R-oso/R-oso.github.io/assets/74653039/3729e4e0-9a7e-46e7-a699-e6eba65bdae9)
 
 #### _Step 2_
 
