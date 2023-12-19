@@ -18,7 +18,7 @@ Using AI, BUD can recognize your houseplant when you open your camera on your ph
     - Structure
 - Styling
   - Style guide
-  - 
+- Proof of concept
 
 ## Planning
 In this project, me and three other students worked as a team. To efficiently work together we worked based on the SCRUM technique. By iterating our concept ideas and narrowing down the target audience we had in mind the idea for BUD became more viable. 
@@ -68,23 +68,27 @@ Users can add their own plants to the BUD application.
 
 _1_
 The user presses the button to add a new plant.
+
 ![WhatsApp Image 2022-06-15 at 9 31 36 AM](https://github.com/R-oso/R-oso.github.io/assets/74653039/3729e4e0-9a7e-46e7-a699-e6eba65bdae9)
 
 _2_
 The camera opens up and shows a live feed inside of the browser. The user needs to focus their camera onto the desired plant. The code will now classify the plant using ML5 and the model made with Teachable Machine. _Note: the feed only gets classified if a plant is on the screen_
+
 ![WhatsApp Image 2022-06-15 at 2 50 59 PM](https://github.com/R-oso/R-oso.github.io/assets/74653039/607faf74-cc20-4843-83f2-4a12206b8325)
 
 _3_
-The plant has been added to the homescreen. Using the csv file, the code now
+The plant has been added to the homescreen. Using the CSV file, the code now matches the classified plant with the information available in the CSV. The code also picks up live data from the external hardware. This information is now used to compare the desired hydration and sun levels with the _actual_ one and gives feedback according to the results.
+
 ![WhatsApp Image 2022-06-15 at 9 31 40 AM](https://github.com/R-oso/R-oso.github.io/assets/74653039/430b0f92-b7f1-47f1-a39b-6da278b05946)
 
 ## Styling
 The styling for this project was done using simple base CSS, without any libraries or other third party software.
 
 ### Styleguide
+
 ![styleguide_bud_Tekengebied 1](https://github.com/R-oso/R-oso.github.io/assets/74653039/2c00c952-ce7a-4a1b-9715-81397c317831)
 
-# Testdocument
-This repo is made for testing the software of BUD and its compatibility with different devices. 
+# Proof of concept
+This repo is made for testing the software of BUD and its compatibility with different devices.  
 
 
